@@ -7,41 +7,99 @@
     <title>Paint Gallery</title>
 </head>
 <body>
+    <!-- My Header STARTS-->
     <header>
-        <nav>
-                <div class="wrapper">
-                    <ul>
-                        <li>Home</li>
-                        <li>About</li>
-                        <li>Blog</li>
-                        <li>Contact</li>
-                    </ul>
-                </div>
+        <!-- .wrapper STARTS -->
+        <div class="wrapper">      
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>    
             </nav>
+            <h1>Paint Gallery</h1>
+        </div><!-- .wrapper ENDS -->               
+    </header><!-- My Header ENDS-->
 
-            <h1>Paint Gallery</h1>        
-    </header>
+    <!-- My MAIN SECTION -->
     <main>
-        <section>
-            <div class="wrapper">
-                <div class="image-container">
+        <!-- Section 1 STARTS-->
+        <section class="new" id="new">
+            <!-- .wrapper STARTS -->
+            <div class="wrapper newFlex">
+                <div class="imageContainer">
                     <img src="" alt="">
                 </div>
-                <div class="text-container">
+                <div class="textContainer">
                     <h2>New product on the shelves</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit consequatur optio voluptatum, provident in vel quo numquam adipisci dolores enim repellendus error dignissimos! Quidem enim pariatur fuga ratione ad magni, assumenda consectetur voluptatibus ut animi laudantium repellendus nam? Magni cupiditate unde dolores fuga ex, iure, id explicabo veniam numquam alias exercitationem accusantium accusamus quas nisi maxime obcaecati adipisci? Reprehenderit voluptate laudantium deserunt nisi blanditiis aliquam saepe? Nam voluptatum sed praesentium? Assumenda reprehenderit earum, nisi quos officia saepe qui quisquam laborum tempora asperiores laudantium! Rem placeat accusantium, suscipit necessitatibus molestiae sit adipisci labore accusamus, facilis quas, iure quia temporibus eius aspernatur.
                     </p>
-                    <button class="read-more">read more</button>
+                    <button class="readMore">read more</button>
                 </div>
-            </div>
-        </section>
-        <section>
+            </div><!-- .wrapper ENDS -->
+        </section><!-- Section 1 ENDS-->
+
+        <!-- Section 2 STARTS-->
+        <section class="latest" id="latest">
+            <!-- .wrapper STARTS -->
             <div class="wrapper">
                 <h2>latest exhibitions</h2>
-                
-            </div>
-        </section>
+                <!-- My exhibition area -->
+                <ul>
+                    <li>
+                        <img src="./images/bear1.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="./images/bear2.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="./images/bear3.jpg" alt="">
+                    </li>
+                </ul>
+            </div><!-- .wrapper ENDS -->
+        </section><!-- Section 2 ENDS-->
     </main>
-    
+
+    <!-- My footer!!! -->
+    <footer>
+        <!-- .wrapper STARTS -->
+        <div class="wrapper">
+            <div class="footerContainer">
+                <!-- List -->
+                <div class="">
+                    <ul class="">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            
+                <!-- Stay updated -->
+                <div class="">
+                    <h3 class="">Stay updated</h3>
+                    <p class="">Subscribe to our newsletter to stay updated.</p>
+                    <div class="">
+                        <div class="">
+                            <input type="text" name="emailAddress" placeholder="email address" class="">
+                            <button type="submit" class="">subscribe</button>
+                        </div>
+                    </div>
+                </div>  
+
+                <!-- Contact -->
+                <div class="">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li>info@email.com | 123 - 456 - 7890</li>
+                        <li>123 some road, Toronto, ON</li>
+                        <li>A5A 5A5, Canada</li>
+                    </ul>
+                </div>
+            </div>
+        </div><!-- .wrapper ENDS -->
+    </footer>
 </body>
 </html>
