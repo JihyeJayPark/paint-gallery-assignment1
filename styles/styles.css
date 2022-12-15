@@ -301,15 +301,22 @@ nav ul {
   display: flex;
 }
 
-nav a {
+nav a,
+.footerPart1 a {
   font-family: 'Roboto', sans-serif;
   color: #201e21;
   text-decoration: none;
-  display: inline-block;
+  /* display: inline-block; */
   font-size: 2rem;
   font-weight: medium;
   line-height: 29px;
   letter-spacing: 0.2px;
+  /* padding: 15px 40px 10px;
+  text-align: center; */
+}
+
+nav a {
+  display: inline-block;
   padding: 15px 40px 10px;
   text-align: center;
 }
@@ -358,7 +365,8 @@ footer {
   width: 70%;
 }
 
-.readMore {
+.readMore,
+.subscribe {
   font-family: 'East Sea Dokdo', cursive;
   font-weight: regular;
   font-size: 4.5rem;
@@ -367,5 +375,106 @@ footer {
   background: #0178a5;
   margin-top: 0;
   border: none;
-  padding: 10px 5px;
+  padding: 10px 10px;
 }
+
+/* Latest Section Styles */
+.latest {
+  background: #f7dae8;
+}
+
+.latest h2 {
+  text-align: center;
+  margin-bottom: 75px;
+}
+
+.latest ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.latest li {
+  width: calc(100% / 3 - 30px);
+  min-width: 300px;
+  margin-right: 30px;
+}
+
+.lastest li::third-child {
+  width: calc(100% / 3);
+  margin-right: 0px;
+}
+
+/* Footer Styles */
+footer {
+  padding: 100px 0 50px;
+}
+
+.footerContainers {
+  display: flex;
+  /* flex-direction: row; */
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footerPart3 h3,
+.footerPart3 li {
+  text-align: right;
+  font-size: 2rem;
+}
+
+.footerPart3 h3,
+.footerPart2 h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 3rem;
+}
+
+.footerPart3 li,
+.footerPart2 p ,
+input::placeholder {
+  font-size: 2rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: lighter;
+  line-height: 29px;
+  letter-spacing: 0.2px;
+}
+
+.footerPart2 {
+  /* Wanted to move .footerPart2 right in the middle of footer */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+  /* text-align: center;
+  min-height: 200px;
+  position: relative; */
+}
+
+/* .footerPart2 h3, 
+.footerPart2 p,
+.footerPart2 .emailAddress {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+} */
+
+.footerPart2 h3 {
+  font-size: 4rem;
+}
+
+input[type=text] {
+  padding: 5px 20px;
+  border: none;
+  width: 400px;
+  box-sizing: border-box;
+}
+
+.emailAddressFlex {
+  display: flex;
+}
+
+
