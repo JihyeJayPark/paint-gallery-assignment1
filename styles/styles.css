@@ -265,8 +265,8 @@ html {
 
 .wrapper {
   margin: 0 auto;
-  max-width: 1080px;
-  width: 90%;
+  max-width: 1200px;
+  width: 95%;
 }
 
 ul {
@@ -316,4 +316,56 @@ nav a {
 
 nav a:first-child {
   padding-left: 0;
+}
+
+/* General Section Style */
+section {
+  padding: 100px 0;
+}
+
+h2 {
+  font-size: 7.5rem;
+  line-height: 36px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: regular;
+  font-size: 2rem;
+  line-height: 29px;
+  letter-spacing: 0.2px;
+}
+
+/* New Section Styles */
+.new, 
+footer {
+  background: #ffe9e9;
+}
+
+.newFlex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.imageContainer {
+  margin-right: 20px;
+  width: calc(30% - 20px);
+}
+
+.textContainer {
+  width: 70%;
+}
+
+.readMore {
+  font-family: 'East Sea Dokdo', cursive;
+  font-weight: regular;
+  font-size: 4.5rem;
+  line-height: 29px;
+  color: white;
+  background: #0178a5;
+  margin-top: 0;
+  border: none;
+  padding: 10px 5px;
 }
