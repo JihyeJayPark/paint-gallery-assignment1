@@ -388,22 +388,29 @@ footer {
   margin-bottom: 75px;
 }
 
-.latest ul {
+.galleryContainer {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
 }
 
+.latest ul {
+  display: flex;
+}
+
 .latest li {
+  margin: 0 20px;
+}
+
+/* .latest li {
   width: calc(100% / 3 - 30px);
   min-width: 300px;
   margin-right: 30px;
 }
 
-.lastest li::third-child {
+.latest li::third-child {
   width: calc(100% / 3);
   margin-right: 0px;
-}
+} */
 
 /* Footer Styles */
 footer {
@@ -477,6 +484,14 @@ input[type=text] {
   display: flex;
 }
 
+.hamburgerButton {
+  display: none;
+}
+
+.hamburgerButton img {
+  width: 20px;
+}
+
 /* Need to review Responsive Design notes and work on it again later on */
 @media (max-width: 768px) {
   header .wrapper {
@@ -484,4 +499,10 @@ input[type=text] {
     justify-content: center;
     height: 100%;
   } 
+  .mainNav {
+    display: none;
+  }
+  .hamburgerButton {
+    display: block;
+  }
 }

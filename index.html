@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paint Gallery</title>
+    <title>Paint Gallery 🎨</title>
+    // linked East Sea Dokdo from Google Fonts
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap" rel="stylesheet">
+    // linked Roboto from Google Fonts
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    // linked stylesheet
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
@@ -18,14 +21,19 @@
     <header>
         <!-- .wrapper STARTS -->
         <div class="wrapper">      
-            <nav>
-                <ul>
+            <nav class="mainNav">
+                <ul >
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#blog">Blog</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>    
             </nav>
+            <div class="hamburgerButton">
+                <button>
+                    <img src="./assets/Hamburger_icon.svg.png" alt="">
+                </button>
+            </div>
             <h1>Paint Gallery</h1>
         </div><!-- .wrapper ENDS -->               
     </header><!-- My Header ENDS-->
@@ -54,17 +62,19 @@
             <div class="wrapper">
                 <h2>latest exhibitions</h2>
                 <!-- My exhibition area -->
-                <ul>
-                    <li>
-                        <img src="./assets/paint3.png" alt="Abstract painting">
-                    </li>
-                    <li>
-                        <img src="./assets/paint4.png" alt="Set up for painting">
-                    </li>
-                    <li>
-                        <img src="./assets/paint5.png" alt="3D painting">
-                    </li>
-                </ul>
+                <div class="galleryContainer">
+                    <ul>
+                        <li>
+                            <img src="./assets/paint3.png" alt="Abstract painting">
+                        </li>
+                        <li>
+                            <img src="./assets/paint4.png" alt="Set up for painting">
+                        </li>
+                        <li>
+                            <img src="./assets/paint5.png" alt="3D painting">
+                        </li>
+                    </ul>
+                </div>
             </div><!-- .wrapper ENDS -->
         </section><!-- Section 2 ENDS-->
     </main>
@@ -75,7 +85,7 @@
         <div class="wrapper">
             <div class="footerContainers">
                 <!-- List -->
-                <div class="footerPart1">
+                <div class="footerPart1"><!-- make it a nav -->
                     <ul>
                         <li><a href="#home">Home</a></li>
                         <li><a href="#blog">Blog</a></li>
