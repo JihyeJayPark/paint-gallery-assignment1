@@ -281,12 +281,16 @@ img {
   /* height: 100%; */
 }
 
+h1 {
+  font-family: 'East Sea Dokdo', cursive;
+}
+
+
 /* HEADER STYLES */
 header {
   height: 100vh;
   background: url(../assets/paint1.png);
   background-size: cover;
-  padding: 50px 0;
 }
 
 h1 {
@@ -294,7 +298,7 @@ h1 {
   margin: 0;
   line-height: 94.3px;
   position: absolute;
-  top: 50%;
+  top: 40%;
 }
 
 nav ul {
